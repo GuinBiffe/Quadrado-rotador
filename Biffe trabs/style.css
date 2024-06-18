@@ -1,0 +1,39 @@
+.quadrado-1 {
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    animation-name: rotação;
+    animation-duration: 6s;
+    animation-iteration-count: 4;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes rotação {
+    0% {
+        background-color: blue;
+        top: 0;
+        left: 0;
+    }
+    25% {
+        background-color: red;
+        top: 0;
+        left: calc(100% - 100px);
+    }
+    50% {
+        background-color: green;
+        top: calc(100% - 100px);
+        left: calc(100% - 100px);
+    }
+    75% {
+        background-color: yellow;
+        top: calc(100% - 100px);
+        left: 0;
+    }
+    100% {
+        background-color: blue;
+        top: 0;
+        left: 0;
+
+}
+}
